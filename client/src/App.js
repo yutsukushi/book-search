@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+import Books from "./pages/"
+import Nav from "./components/Nav"
 import "./App.css";
 
 class App extends Component {
