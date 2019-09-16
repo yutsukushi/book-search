@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <BrowserRouter>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="/">
+            <a className="navbar-brand">
                 Google Books
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,8 +16,8 @@ function Navbar() {
                 <ul className="navbar-nav">
                 <li className="nav-item">
                     <Link 
-                    className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
-                    to="/search">
+                    className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}
+                    to="/">
                         Search 
                     </Link>
                 </li>

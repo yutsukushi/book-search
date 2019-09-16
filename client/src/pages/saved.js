@@ -3,7 +3,7 @@ import React, { Component }from "react";
 // import Navbar from "../components/Nav";
 // import Jumbotron from "../components/Jumbotron";
 // import Form from "../components/Form";
-import Grid from "../components/Grid";
+import Grid from "../components/SearchResults";
 // import "./index.css";
 
 class Saved extends Component {
@@ -16,13 +16,13 @@ class Saved extends Component {
             <Grid>
                 {/* Search results populate here */}
                 <ul>
-                <div class="card">
+                <div className="card">
                     <li>
-                    <div class="card-body">
-                        <h5 class="card-title">{this.props.bookTitle}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">{this.props.author}</h6>
-                        <p class="card-text">{this.props.summary}</p>
-                        <button type="submit" class="btn btn-danger">Delete</button>
+                    <div className="card-body">
+                        <h5 className="card-title">{this.props.bookTitle}</h5>
+                        <h6 className="card-subtitle mb-2 text-muted">{this.props.author}</h6>
+                        <p className="card-text">{this.props.summary}</p>
+                        <button type="submit" className="btn btn-danger">Delete</button>
                     </div>
                     </li>
                 </div>

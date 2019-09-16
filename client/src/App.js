@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Nav";
+import Search from "./pages/Search";
 import Saved from "./pages/Saved";
-import Home from "./pages/Home";
 
 
 function App() {
@@ -11,8 +11,9 @@ function App() {
       <div>
         <Navbar />
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/save" component={Saved} />
+          {/* <Route exact path="/" component={Home} /> */}
+          <Route exact path="/" component={Search} />
+          <Route exact path="/saved" component={Saved} />
         </Switch>
       </div>
     </Router>
